@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Choose a quote</title>
+<link rel="stylesheet" href="index.css">
+    <style>
+        #header{
+        background-color: lawngreen;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        }
+        #nav{
+        line-height: normal;
+        background-color: yellow;
+            color:black;
+            height:350px;
+            width: 110px;
+            float: left;
+            padding: 5px;
+        }
+        #footer{
+        background-color: purple;
+        color: white;
+        clear: both;
+        text-align: center;
+        padding: 5px;
+        }
+    
+    </style>
+</head>
+    <div id="header">
+    <h1>QUOTE GENERATOR</h1>
+    </div>
+    <ul id="nav">
+        <li><a href="index.html">QUOTES</a></li>
+        <li><a href="https://lonalonakie.netlify.app">PORTFOLIO WEBSITE</a></li>
+        <li><a href="https://youtube.com/channel/UCENvFbxHqDGOY6FwjWzT0LQ">YOUTUBE CHANNEL</a></li>
+        </ul>
+    
+    
+<body>
+<!-- Start your code here -->
+ 
+     <h2>HOW TO USE THE QUOTE GENERATOR : Type <blockquote>quote1</blockquote> in the textbox to start and gradually increase the number i.e.quote1, quote2, quote 3...</h2>
+    <div id="container">
+ <h1>The quote is: </h1>
+ <div>
+ <input id="myInput" type="quote">
+ <button onclick="myFunction()">Click</button>
+  <p id="phrase"></p>
+ </div>
+ </div>
+<!-- End your code here -->
+</body>
+<script type="text/javascript">
+function myFunction(){
+var words=document.getElementById("myInput").value;
+var quote;
+switch(words){
+case "quote1":
+quote='Nothing great ever happened by mistake!';
+break;
+case "quote2":
+quote='Happiness results when you acknowledge your creator!';
+break;
+case "quote3":
+quote='Small progress is still progress!';
+break;
+case "quote4":
+quote='Growth does not happen in a place of comfort and growth doesn not happen overnight!';
+break;
+case "quote5":
+quote='Small minds discuss people. Average minds discuss events. Great minds discuss ideas.';
+break;
+case "quote6":
+quote='If at first you do not succeed, dust yourself off and try again.';
+break;
+case "quote7":
+quote='Never stop praying!';
+break;
+ }
+document.getElementById("phrase").innerHTML=quote;
+ }
+  
+   
+  
+  
+</script>
+    <footer id="footer">&copy; 2022 DEVELOPED BY LONA MATSHINGANA</footer>
+</html>
